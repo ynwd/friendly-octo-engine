@@ -1,0 +1,168 @@
+{
+    "info": {
+        "_postman_id": "96079956-2a34-43af-aead-9969dbd0b959",
+        "name": "tinder-app",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "login",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3000/api/auth/login",
+                    "path": [
+                        "api",
+                        "auth",
+                        "login"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"email\": \"test@example.com\",\n  \"password\": \"password123\"\n}"
+                }
+            }
+        },
+        {
+            "name": "register",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3000/api/auth/register",
+                    "path": [
+                        "api",
+                        "auth",
+                        "register"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"username\": \"john\",\n  \"email\": \"test@example.com\",\n  \"password\": \"password123\"\n}"
+                }
+            }
+        },
+        {
+            "name": "premium",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3000/api/premium/purchase/",
+                    "path": [
+                        "api",
+                        "premium",
+                        "purchase"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NTU1MzA1NjBhOTMxMjk2MWRlZTdlYSIsImlhdCI6MTczMzY0NTA2NSwiZXhwIjoxNzMzNjQ4NjY1fQ.YlLxdKLEzDZrHSbq-JcN8VJD0OdDQTpeBjUAOJiQ6tw"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"username\": \"john\",\n  \"email\": \"test@example.com\",\n  \"password\": \"password123\"\n}"
+                }
+            }
+        },
+        {
+            "name": "swipe-pass",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3000/api/swipe/swipe",
+                    "path": [
+                        "api",
+                        "swipe",
+                        "swipe"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NTRlZmVhNmU4ZTQ2MTEwOWJlZmQ2MyIsImlhdCI6MTczMzYxOTY5NSwiZXhwIjoxNzMzNjIzMjk1fQ.JCx-OVmqlAe_nGfI0v3uW2AjLWFKUcWUrQ57E34S6Z8"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"profileId\": \"profileId123\",\n  \"direction\": \"pass\"\n}"
+                }
+            }
+        },
+        {
+            "name": "swipe-like",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3000/api/swipe/swipe",
+                    "path": [
+                        "api",
+                        "swipe",
+                        "swipe"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "header": [
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NTRlZmVhNmU4ZTQ2MTEwOWJlZmQ2MyIsImlhdCI6MTczMzYxOTY5NSwiZXhwIjoxNzMzNjIzMjk1fQ.JCx-OVmqlAe_nGfI0v3uW2AjLWFKUcWUrQ57E34S6Z8"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"profileId\": \"profileId\",\n  \"direction\": \"like\"\n}"
+                }
+            }
+        }
+    ]
+}
